@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>旅游首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!-- css文件 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- js文件 -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+</head>
+<body>
+<!-- 导航 -->
+<div class="nav-links">	
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#myPage"><h1>广西旅游</h1></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav link-effect">
+					<li class="active"><a href="index.html">首页</a></li>
+					<li><a href="精选路线.html">精选路线</a></li>
+					<li><a href="旅游攻略.html">旅游攻略</a></li>
+					<li><a href="游记.html">游记</a></li>
+					<li><a href="#">关于我们</a></li>	
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+<!-- 导航结束 -->
+<!-- 轮播图部分 -->
+<section class="banner">
+	<div class="slider">
+	<ul class="slider-main">
+		<!-- 第一个 -->
+		<li class="slider-panel"> 
+			<img src="images/banner1.jpg" class="img-responsive">
+			<div class="banner-info">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>广西桂林漓江</h3>
+						<a href="#">了解更多</a>
+					</div>
+				</div>		
+			</div>
+		</li>
+		<!-- 第二个 -->
+		<li class="slider-panel"> 
+			<img src="images/banner2.jpg" class="img-responsive">
+			<div class="banner-info">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>广西桂林象鼻山</h3>	
+						<a href="#">了解更多</a>
+					</div>
+				</div>		
+			</div>
+		</li>
+		<!-- 第三个 -->
+		<li class="slider-panel"> 
+			<img  src="images/banner3.jpg" class="img-responsive">
+			<div class="banner-info">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>广西北海银滩</h3>
+						<a href="#">了解更多</a>
+					</div>
+				</div>		
+			</div>
+		</li>
+		<!-- 第四个 -->
+		<li class="slider-panel"> 
+			<img src="images/banner4.jpg" class="img-responsive">
+			<div class="banner-info">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>广西崇左德天瀑布</h3>
+						<a href="#">了解更多</a>
+					</div>
+				</div>		
+			</div>
+		</li>
+		<!-- 第五个 -->
+		<li class="slider-panel"> 
+			<img src="images/banner5.jpg" class="img-responsive">
+			<div class="banner-info">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>广西南宁青秀山</h3>
+						<a href="#">了解更多</a>
+					</div>
+				</div>		
+			</div>
+		</li>
+	</ul>
+	<!-- 按钮 -->
+	<div class="slider-extra">
+		<ul class="slider-nav">
+			<li class="slider-item"><p class="sl">1</p></li>
+			<li class="slider-item"><p class="sl">2</p></li>
+			<li class="slider-item"><p class="sl">3</p></li>
+			<li class="slider-item"><p class="sl">4</p></li>
+			<li class="slider-item"><p class="sl">5</p></li>
+		</ul>
+		<div class="slider-page"> <a class="slider-pre" href="javascript:;;">&lt;</a> <a class="slider-next" href="javascript:;;">&gt;</a> </div>
+	</div>
+</div>
+</section>
+<!-- 轮播图的js文件 -->
+<!-- 图片滑动js插件 -->
+<script src="js/zslider-1.0.1.js"></script>
+<script type="text/javascript">
+		var slider = $('.slider').zslider({
+			// 5个图片文件的列表li.slider-panel
+			imagePanels: $('.slider-panel'),
+			// 5个按钮的列表li.slider-item
+			ctrlItems: $('.slider-item'),
+			// 选择了当前处于激活状态的索引按钮
+			ctrlItemHoverCls: 'slider-item-selected',
+			// 翻页的按钮
+			flipBtn: {
+				container: $('.slider-page'),
+				preBtn: $('.slider-pre'), 
+				nextBtn: $('.slider-next')
+			},
+			// 向列表添加回调函数
+			callbacks: {
+				animate: function(imagePanels, ctrlItems, fromIndex, toIndex) {
+					return true;
+				}
+			}
+		});
+</script>
+<!-- 轮播图部分结束 -->
+<!-- 主要内容部分 -->
+<!-- 当季旅游 -->
+<section class="season" id="season">
+	<div class="container">
+		<h2 class="text-center">当季旅游</h2>
+		<p class="text-center">HOT SEASON TOUR</p>
+	</div>
+		<div class="tm-container-outer" id="tm-season-2">
+			<section class="tm-slideshow-season">
+				<div class="tm-slideshow">
+					<img src="images/tm-img-01.jpg" alt="Image">    
+				</div>
+				<div class="tm-slideshow-description tm-bg-primary">
+					<h2 class="">广西桂林漓江</h2>
+					<p>漓江，属珠江流域西江水系，为支流桂江上游河段的通称，位于广西壮族自治区东北部。<br>漓江风光有山青、水秀、洞奇、石美“四胜”之誉。从桂林至阳朔的83公里漓江河段，是漓江精华，还有“深潭、险滩、流泉、飞瀑”的佳景，是岩溶地形发育典型、丰富和集中地带，集中了桂林山水的精华，令人有“舟行碧波上，人在画中游”之感。</p>
+					<a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">继续阅读</a>
+				</div>
+			</section>
+			<section class="clearfix tm-slideshow-season tm-slideshow-season-reverse">
+
+				<div class="tm-right tm-slideshow tm-slideshow-highlight">
+					<img src="images/tm-img-02.jpg" alt="Image">
+				</div> 
+
+				<div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+					<h2 class="">广西北海银滩</h2>
+					<p>北海银滩是北海市的旅游景点，位于广西北海市银海区，西起侨港镇渔港，东至大冠沙，由西区、东区和海域沙滩区组成，东西绵延约24公里，海滩宽度在30--3000米之间，陆地面积12平方公里，总面积约38平方公里。<br>银滩均由高品位的石英砂堆积而成，在阳光的照射下，洁白、细腻的沙滩会泛出银光，故称银滩，北海银滩以其“滩长平、沙细白、水温净、浪柔软、无鲨鱼”等特点，而被称为“中国第一滩”。</p>
+					<a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">继续阅读</a>
+				</div>                        
+
+			</section>
+			<section class="tm-slideshow-season">
+				<div class="tm-slideshow">
+					<img src="images/tm-img-03.jpg" alt="Image">
+				</div>
+				<div class="tm-slideshow-description tm-bg-primary">
+					<h2 class="">广西崇左德天瀑布</h2>
+					<p>德天瀑布位于广西壮族自治区崇左市大新县硕龙镇德天村，中国与越南边境处的归春河上游，瀑布气势磅礴、蔚为壮观，与紧邻的越南板约瀑布（“Bản Giốc & Đức Thiên”）相连，是亚洲第一、世界第二大跨国瀑布，年均水流量约为贵州黄果树瀑布的三倍，为中国国家AAAAA级旅游景区。</p>
+					<a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">继续阅读</a>
+				</div>
+			</section>
+		</div>
+</section>
+<!-- 当季旅游结束 -->
+<!-- 游记 -->
+<section class="season" id="season">
+	<div class="t2">
+	<div class="container">
+		<h2 class="text-center">游记</h2>
+		<p class="text-center">TOURISM</p>
+	</div>
+	<div id="wrap">
+			<ul>
+				<li style="background-image:url(images/1.jpg)">
+					<div class='txt'>
+						<p>故事之城丨丨桂林漓江</p>
+					</div>
+				</li>
+				<li style="background-image:url(images/2.jpg)">
+					<div class='txt'>
+						<p>故事之城丨丨北海涠洲岛</p>
+					</div>
+				</li>
+				<li style="background-image:url(images/3.jpg)">
+					<div class='txt'>
+						<p>故事之城丨丨桂林阳朔西街</p>
+					</div>
+				</li>
+				<li style="background-image:url(images/4.jpg); width:789px;">
+					<div class='txt'>
+						<p>故事之城丨丨黄桃古镇</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<br>
+		<br>
+	</div>
+</section>
+<script type="text/javascript">
+			$('#wrap ul li').hover(function(){
+				$(this).stop().animate({
+					width : '789px'
+				},500).siblings().stop().animate({
+					width : '100px'
+				},500);
+			});
+</script>
+<!-- 游记结束 -->
+<!-- 主要内容部分结束 -->
+<!-- 尾部部分 -->
+<div class="copy">
+		    <p class="wow fadeInUp animated animated" data-wow-delay=".5s">Copyright &copy; 2018.计科1642 韦露蔓</p>
+</div>
+<!-- 尾部部分结束 -->
+<!-- 返回顶端 -->
+<a href="#" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// UItoTop是move-top.js的函数，easeOutQuart是easing.js的函数
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+</script>
+<!-- 返回顶端结束 -->
+</body>
+</html>

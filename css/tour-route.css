@@ -1,0 +1,100 @@
+.nybanner {
+    width: 100%;
+    height: 520px;
+}
+.route{
+	padding: 100px 0;
+}
+.route h3{
+    font-size: 2.5em;
+    color: #EB6F63;
+    margin: 0;
+    padding-bottom: 1em;
+    text-align: center;
+    position: relative;
+}
+.route h3:before{
+    background: #EB6F63;
+    width: 20%;
+    height: 3px;
+    content: '';
+    position: absolute;
+    bottom: 8%;
+    left: 34%;
+}
+.dummy-text {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.8em;
+    color: #888;
+    text-align: center;
+    padding-left: 23em;
+    text-transform: capitalize;
+}
+.route-grid{
+    margin: 3em 0 0;
+    position: relative;
+}
+.route-grid h5 a{
+	margin:1em 0 2em;
+	color:#EB6F63;
+	font-size:1.8em;
+	display:block;
+	text-decoration:none;
+    text-align: center;
+}
+.route-grid h5 a:hover{
+	color:#6B8FA8;
+}
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.nav-tabs {
+    border-bottom: none;
+    margin: 0 0 40px;
+}
+.nav-tabs > li:nth-child(1) {
+    margin-left: 40em;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover,.nav-tabs > li.active > a:focus {
+    color: #EB6F63;
+    cursor: pointer;
+    background-color: #24e8ff;
+    border: none;
+    border-bottom-color: transparent;
+}
+.nav-tabs > li {
+    margin-bottom: 0;
+}
+.nav-tabs > li > a {
+    margin-right: 3px;
+    border-radius: 0;
+    font-size: 18px;
+    color: #000000;
+    border: none;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+span.more {
+    width: 91px;
+    height: 26px;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+span.more a {
+    display: block;
+    width: 91px;
+    line-height: 26px;
+    background: #b57838;
+    color: #fff;
+}
+h4{
+    text-align: center;
+}
+em{
+    color: #fa5c59;
+}
